@@ -1,0 +1,31 @@
+/**
+ * @return {Function}
+ */
+
+--- Essa primeira parte é o comentário JSDoc
+--- Especifica que a função createHelloWorld retorna um objeto do tipo Function. Este comentário ajuda os desenvolvedores a entenderem que createHelloWorld não retorna um valor direto como um número ou uma string, mas sim uma outra função.
+
+================================================//=====================================
+
+var createHelloWorld = function() {
+    
+    return function() {
+        return "Hello World"
+    }
+};
+
+--- essa var cria uma função anônima e ela retorna outra função anonima
+--- a função interna não aceita argumentos e simplesmente retorna "Hello World"
+
+================================================//=====================================
+
+/**
+ * const f = createHelloWorld();
+ * f(); // "Hello World"
+ */
+
+ --- Esse último bloco de comentários é um exemplo de uso
+ --- const f = createHelloWorld();: Chama createHelloWorld e armazena a função retornada na constante f.
+ --- f(); // "Hello World": Chama a função f (que é a função retornada por createHelloWorld) e mostra que ela retorna "Hello World"
+
+ ================================================//=====================================
